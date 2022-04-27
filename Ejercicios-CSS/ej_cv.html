@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="imagenes/cropped-manna_logo-550.png">
+    <link rel = "stylesheet" href="mi_estilo.css" type="text/css">
     <style>
         body {
             text-align: center;
@@ -15,20 +16,20 @@
         }
 
         div {
-            border: 2px solid #1f1bff;
+            border: 2px dashed #1f1bff;
             margin: 10px;
             padding: 5px 30px;
             border-radius: 15px;
             box-shadow: 10px 5px #0000004b;
         }
 
-        img {
+        #principal {
             width: 50px;
             float: left;
             border-radius: 50%;
         }
 
-        div h3 {
+        div.especial h3 {
             font-family: 'Inconsolata', monospace;
             text-shadow: 5px 3px rgba(0, 0, 0, 0.205);
         }
@@ -38,12 +39,12 @@
 <body>
 
     <div>
-        <img src="imagenes/icono_usuario.jpg">
+        <img id="principal" src="imagenes/icono_usuario.jpg">
         <h1>Nombre Alumno</h1>
         <h2>Ing. en Computacion</h2>
     </div>
 
-    <div>
+    <div class="especial">
         <h3>Datos Personales</h3>
         <p><span>Fecha de Nacimiento:</span> dd/mm/aaaa</p>
         <p><span>Email:</span> email@email.com</p>
